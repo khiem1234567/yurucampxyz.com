@@ -1,0 +1,22 @@
+.box-2{
+    width: 1000px;
+    height: 300px;
+    background-color: #fff0f5;
+    position: relative;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+}
+.box-box2{
+    text-align: center;
+     display: flex;
+}
+.box-2:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    transform: scale(1.02);
+
+}

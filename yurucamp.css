@@ -103,6 +103,29 @@ body {
     position: relative;
 
 }
-p{
-    margin-top: 50%;
+.box {
+    width: 500px;
+    height: 800px;
+    background-image: url('https://image.lag.vn/upload/news/23/07/10/anime-yuru-camp-season-3-2_DWER.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+
+    
+}
+.box:hover{
+    transform: scale(1.15);
+    transition: 0.3s;
+    rotate: 3deg;
+
+    
+}
+.video{
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    text-decoration: none;
 }
