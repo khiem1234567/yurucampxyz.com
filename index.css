@@ -16,19 +16,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+     margin: 0;padding: 0;overflow-x: hidden;
+     width: 100%;
 }
 
 .login-box {
     width: 320px;
-    padding: 40px;
+    padding: 50px;
     background-position: center;
-    border-radius: 10px;
-    animation: showForm 0.8s ease;
-    background-color: rgb(22, 226, 216);
+    border-radius: 20px;
+    background-color: rgb(240, 171, 23);
     border: 5px solid;
-    outline: none;
-    animation: rgbBorder 4s linear infinite;
-
+    transition: 0.3s;
+    
+    box-shadow: #1e96e6;
 }
 @keyframes rgbBorder{
     0%{
@@ -112,7 +113,7 @@ button {
 button:hover {
     background: #5a67d8;
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(247, 173, 14, 0.925);
 }
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
