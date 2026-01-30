@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="tieusu.css">
     <link rel="icon" type="image/png" href="iconweb.png"/>
     <link rel="stylesheet" type="text/css" href="yurucamp.css">
+    <link rel="stylesheet" type="text/css" href="hopthongtinchar.css">
     <meta charset="UTF-8">
      <style>
         .marquee-container {
@@ -16,39 +17,108 @@
             white-space: nowrap;
             animation: marquee 40s linear infinite;
         }
+        
      </style>
+     <script src="script.js"></script>
 
 </head>
 <body>
-    <div class="taskbar">
-    <img class="logo" src="Yuru_Camp_logo.svg-removebg-preview.png" alt="Logo">
-    <input class="search-bar" type="search" placeholder="Tìm kiếm..." class="search-bar">
+   <div class="taskbar">
+    <img class="logo" src="Yuru_Camp_logo.svg.png" alt="Logo">
+    <input class="search-bar" type="search" placeholder="Tìm kiếm...">
 
     <ul class="menu">
         <li><a href="index.html">Trang chủ</a></li>
         <li><a href="about.html">Về chúng tôi</a></li>
-        <li><a href="service.html">Dịch vụ</a></li>
-        <li><a href="contact.html">Liên hệ</a></li>
+
+        <!-- thả từ trên xuống=))-->
+        <li class="has-dropdown">
+            <a href="#">Dịch vụ</a>
+            <ul class="dropdown">
+                <li><a href="#">Dịch vụ 1</a></li>
+                <li><a href="#">Dịch vụ 2</a></li>
+                <li><a href="#">Dịch vụ 3</a></li>
+            </ul>
+        </li>
+
+        <li class="has-dropdown">
+            <a href="https://www.facebook.com/Yurucamp.monoVNFanpage/">Liên hệ</a>
+            <ul class="dropdown">
+                <li><a href="#">Dịch vụ 1</a></li>
+                <li><a href="#">Dịch vụ 2</a></li>
+                <li><a href="#">Dịch vụ 3</a></li>
+            </ul>
+        
+        
+        </li>
+        <li class="has-dropdown">
+            <a href="https://www.1999.co.jp/eng/search?typ1_c=110&cat=chara&target=original&searchkey=Yurucamp">Shop</a>
+            <ul class="dropdown">
+                <li><a href="#">Dịch vụ 1</a></li>
+                <li><a href="#">Dịch vụ 2</a></li>
+                <li><a href="#">Dịch vụ 3</a></li>
+            </ul>
+        
+        </li>
     </ul>
 
     <a href="index.html" class="btn-login">Đăng Xuất</a>
 </div>
+    
     <div class="marquee">
-    <h1 style="font-size: 20px; color: #ff69b4; animation: marquee 15s linear infinite;">Chào mừng bạn đến với Yuru Camp! Hãy tận hưởng chuyến phiêu lưu cắm trại tuyệt vời cùng chúng tôi!</h1>
+    <h1 style="font-size: 20px; color: #ffffff; animation: marquee 15s linear infinite;">Chào mừng bạn đến với Yuru Camp! Hãy tận hưởng chuyến phiêu lưu cắm trại tuyệt vời cùng chúng tôi!</h1>
 </div>
-<div class="box-box2"><!-- để lòng ghép các ô lại với nhau đặt vào trong cùng 1 thẻ div cha các thẻ div con  -->
+<div class="box-box2">
+    <!-- để lòng ghép các ô lại với nhau đặt vào trong cùng 1 thẻ div cha các thẻ div con  -->
+     <div class="box-3"></div>
+     <div class="box-4"></div>
+     <div class="box-5"></div>
+     <div class="box-6"></div>
     <div class="box"><a  href="trailer.mp4" class="video"></a></div>
      <div class="box-2">
     <h2 class="heading">Giới thiệu về Yuru Camp</h2>
     <p class="ngankhoangcach">Yuru Camp, hay còn gọi là Laid-Back Camp, là một bộ anime nổi tiếng của Nhật Bản, kể về những cuộc phiêu lưu cắm trại của một nhóm bạn trẻ. Bộ truyện tập trung vào cuộc sống hàng ngày và những trải nghiệm tuyệt vời khi khám phá thiên nhiên qua các chuyến đi cắm trại.</p>
     <p class="ngankhoangcach">Bộ anime này nổi bật với hình ảnh đẹp mắt, âm nhạc nhẹ nhàng và câu chuyện ấm áp về tình bạn và sự gắn kết với thiên nhiên. Yuru Camp không chỉ mang lại cảm giác thư giãn mà còn truyền cảm hứng cho người xem về việc tận hưởng cuộc sống ngoài trời và khám phá những điều mới mẻ.</p>
     <p class="ngankhoangcach">Nếu bạn yêu thích thiên nhiên, cắm trại và những câu chuyện nhẹ nhàng, Yuru Camp chắc chắn sẽ là một lựa chọn tuyệt vời để thưởng thức.</p>
+    <!-- Ảnh nhân vật -->
+    <img class="imagenhanvat" src="yurucampchar1.jpg" alt="Yuru Camp"onclick="openInfo()">
+    <img class="imagenhanvat" src="yurucampchar2.jpg" alt="Yuru Camp"onclick="openInfo1()">
+    <img class="imagenhanvat" src="yurucampchar3.jpg" alt="Yuru Camp"onclick="openInfo()">
+    <img class="imagenhanvat" src="yurucampchar4.jpg" alt="Yuru Camp"onclick="openInfo()">
+    <img class="imagenhanvat" src="yurucampchar5.jpg" alt="Yuru Camp"onclick="openInfo()">
+
+<!-- Hộp thông tin (modal) -->
+<div id="characterModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeInfo()">&times;</span>
+    <h2>Shima Rin</h2>
+    <p>
+      Shima Rin là nhân vật trong anime Yuru Camp.<br>
+      Cô thích cắm trại một mình và rất yêu thiên nhiên.
+    </p>
+    <img onclick="openInfo()">
+  </div>
+</div>
+<div id="characterModal1" class="modal1">
+  <div class="modal1-content">
+    <span class="close1" onclick="closeInfo1()">&times;</span>
+    <h2>Nadeshiko Kagamihara</h2>
+    <p>
+      Nadeshiko Kagamihara là nhân vật trong anime Yuru Camp.<br>
+      Nadeshiko Kagamihara-cô nàng hoạt bát năng động, là máy bào đồ ăn đắc lực của câu lạc bộ, cô đã đạp xe từ nhà tới tạn hồ Motosu, bị lạc và đã gặp Rin
+    </p>
+    <img onclick="openInfo1()">
+  </div>
+</div>
+
+
+
+
+        
+
 
 </div>
-<div class="box-3"></div>
-<div class="box-4"></div>
-<div class="box-5"></div>
-<div class="box-6"></div>
+
 </div>
 
 

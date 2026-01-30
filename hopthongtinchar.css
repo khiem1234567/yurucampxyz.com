@@ -1,0 +1,72 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  display: none;
+}
+.modal:hover{
+    transition: 0.8s;
+    transform: scale(1.18);
+}
+/* Khi click (được target) */
+.modal:target {
+  display: block;
+}
+
+/* Hộp nội dung */
+.modal-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Nút đóng */
+.close {
+  text-decoration: none;
+  font-size: 24px;
+  float: right;
+  color: black;
+}
+.modal1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  display: none;
+}
+.modal1:hover{
+    transition: 0.8s;
+    transform: scale(1.18);
+}
+/* Khi click (được target) */
+.modal1:target {
+  display: block;
+}
+
+/* Hộp nội dung */
+.modal1-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Nút đóng */
+.close1 {
+  text-decoration: none;
+  font-size: 24px;
+  float: right;
+  color: black;
+}

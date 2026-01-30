@@ -25,8 +25,8 @@ body {
     padding: 50px;
     background-position: center;
     border-radius: 20px;
-    background-color: rgb(240, 171, 23);
-    border: 5px solid;
+    background:linear-gradient(90deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+    border: 2px solid;
     
     box-shadow: #1e96e6;
 }
@@ -116,7 +116,7 @@ button {
 button:hover {
     background: #5a67d8;
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(255, 145, 0, 0.925);
+    box-shadow: 0 5px 10px rgba(149, 220, 241, 0.925);
 }
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
