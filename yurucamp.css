@@ -5,6 +5,8 @@ body{
       margin: 0 auto;
       display: block;
       background:linear-gradient(90deg,#DAB1DA , #f39e6c,#764ba2);
+      background-repeat: no-repeat;
+      
 }
 * {
     margin: 0;
@@ -217,4 +219,17 @@ body {
     inset: 0;
     z-index: -2;
     text-decoration: none;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.spacer {
+  height: 400vh;
 }

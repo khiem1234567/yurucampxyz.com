@@ -1,0 +1,377 @@
+.site-footer {
+    background: linear-gradient(135deg,#343530,#888b8bea,rgb(116, 114, 111)
+);
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-desc {
+  line-height: 1.3;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #7ddfff;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-social a {
+    margin: 0 8px;
+  }
+}
+.section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section img{
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 450px;
+  margin-bottom: 25px;
+}
+.section img:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px hwb(221 50% 0%) ;
+}
+.text-box {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px hwb(221 50% 0%) ;
+}
+.text-box h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+.text-box p {
+  font-size: 30px;
+}
+.section2 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section2 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 500px;
+  margin-bottom: 30px;
+}
+.section2 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box2 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box2:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box2 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box2 p {
+  font-size: 30px;
+}
+.section3 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section3 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 500px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.section3 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box3 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box3:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box3 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box3 p {
+  font-size: 30px;
+}
+.section4 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section4 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 700px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.section4 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box4 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box4:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box4 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box4 p {
+  font-size: 30px;
+}
+.section5 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section5 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 700px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.section5 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box5 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box5:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box5 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box5 p {
+  font-size: 30px;
+}
+.section6 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section6 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 600px;
+  width: 550px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+}
+.section6 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box6 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box6:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box6 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box6 p {
+  font-size: 30px;
+}
+.section7 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section7 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 700px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.section7 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box7 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:900px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box7:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box7 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box7 p {
+  font-size: 30px;
+}
+
+.section8 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.section8 img{
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 700px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.section8 img:hover{
+   transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box8 {
+  background: linear-gradient(#fff09dec, #F5F5DD);
+  border-radius: 20px;
+  padding: 55px;
+  width:950px;
+  margin:30px;
+  margin-left: 100px;
+}
+.text-box8:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box8 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box8 p {
+  font-size: 30px;
+}
+

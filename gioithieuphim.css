@@ -1,0 +1,260 @@
+.modal6 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+  display: none;
+  z-index: 1000;
+}
+.modal6:hover{
+    transition: opacity 0.3s ease;
+    transition: transform 0.65s ease;
+    transform: scale(1.20);
+}
+.modal6-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+
+
+}
+.modal6-content img{
+  height: 100%;
+  border-radius: 20px;
+
+
+}
+.modal6-content h2{
+  text-align: center;
+
+}
+.modal6-content h2:hover{
+  color: bisque;
+
+}
+.modal6-content p{
+  font-size: 25px;
+  color: lightsalmon;
+}
+.modal6-content p:hover{
+  color: rgb(255, 194, 82);
+}
+.close6 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close6:hover{
+    transition:0.3s;
+    color: orangered;
+
+}
+.modal7 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+  display: none;
+  z-index: 1000;
+}
+.modal7:hover{
+    transition: opacity 0.3s ease;
+    transition: transform 0.65s ease;
+    transform: scale(1.20);
+}
+.modal7-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+
+
+}
+.modal7-content img{
+  height: 100%;
+  border-radius: 20px;
+  width: 300px;
+  
+
+}
+.modal7-content h2{
+  text-align: center;
+
+}
+.modal7-content h2:hover{
+  color: lightslategray;
+}
+.modal7-content p{
+  font-size: 25px;
+  color: lightsalmon;
+}
+.modal7-content p:hover{
+  color: rgb(255, 194, 82);
+}
+.close7 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close7:hover{
+    transition:0.3s;
+    color: orangered;
+
+}
+.modal8 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+  display: none;
+  z-index: 1000;
+}
+.modal8:hover{
+    transition: opacity 0.3s ease;
+    transition: transform 0.65s ease;
+    transform: scale(1.20);
+}
+.modal8-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+
+
+}
+.modal8-content img{
+  height: 100%;
+  border-radius: 20px;
+  width: 300px;
+  
+
+}
+.modal8-content h2{
+  text-align: center;
+
+}
+.modal8-content h2:hover{
+  color: rgb(63, 146, 255);
+}
+.modal8-content p{
+  font-size: 25px;
+  color: lightsalmon;
+}
+.modal8-content p:hover{
+  color: rgb(255, 194, 82);
+}
+.close8 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close8:hover{
+    transition:0.3s;
+    color: orangered;
+
+}
+.modal9 {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+  display: none;
+  z-index: 1000;
+}
+.modal9:hover{
+    transition: opacity 0.3s ease;
+    transition: transform 0.65s ease;
+    transform: scale(1.20);
+}
+.modal9-content {
+  background: white;
+  width: 50%;
+  height: 60%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+
+
+}
+.modal9-content img{
+  height: 100%;
+  border-radius: 20px;
+  width: 300px;
+  
+
+}
+.modal9-content h2{
+  text-align: center;
+
+}
+.modal9-content h2:hover{
+  color: rgb(221, 185, 25);
+}
+.modal9-content p{
+  font-size: 25px;
+  color: lightsalmon;
+}
+.modal9-content p:hover{
+  color: rgb(255, 194, 82);
+}
+.close9 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close9:hover{
+    transition:0.3s;
+    color: orangered;
+
+}

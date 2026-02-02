@@ -1,72 +1,334 @@
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-  display: none;
-}
-.modal:hover{
-    transition: 0.8s;
-    transform: scale(1.18);
-}
-/* Khi click (được target) */
-.modal:target {
-  display: block;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-/* Hộp nội dung */
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PANEL TRƯỢT */
 .modal-content {
-  background: white;
-  width: 50%;
-  height: 60%;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(180deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: flex-end;
+
+  /* BẮT ĐẦU NGOÀI MÀN HÌNH */
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
 }
 
-/* Nút đóng */
-.close {
-  text-decoration: none;
-  font-size: 24px;
-  float: right;
-  color: black;
+/* KHI MỞ → TRƯỢT VÀO */
+.modal.active .modal-content {
+  transform: translateX(0);
+}
+
+/* Ảnh nhân vật */
+.char-img {
+  width: 450px;
+  margin-right: -80px; /* tràn nhẹ cho đẹp */
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+}
+.char-img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+/* Thông tin */
+.char-info {
+  padding: 40px 30px;
+  flex: 1;
+  text-align: left;
+}
+.close{
+    text-decoration: none;
+    font-size: 40px;
+    float: right;
+    color: rgb(0, 0, 0);
+}
+.close:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
 }
 .modal1 {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-  display: none;
-}
-.modal1:hover{
-    transition: 0.8s;
-    transform: scale(1.18);
-}
-/* Khi click (được target) */
-.modal1:target {
-  display: block;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-/* Hộp nội dung */
+.modal1.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PANEL TRƯỢT */
 .modal1-content {
-  background: white;
-  width: 50%;
-  height: 60%;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(180deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: flex-end;
+
+  /* BẮT ĐẦU NGOÀI MÀN HÌNH */
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
 }
 
-/* Nút đóng */
-.close1 {
-  text-decoration: none;
-  font-size: 24px;
-  float: right;
-  color: black;
+/* KHI MỞ → TRƯỢT VÀO */
+.modal1.active .modal1-content {
+  transform: translateX(0);
 }
+
+/* Ảnh nhân vật */
+.char-img1 {
+  width: 450px;
+  margin-right: -80px; /* tràn nhẹ cho đẹp */
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+}
+.char-img1:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+/* Thông tin */
+.char-info1 {
+  padding: 40px 30px;
+  flex: 1;
+  text-align: left;
+}
+.close1{
+    text-decoration: none;
+    font-size: 40px;
+    float: right;
+    color: rgb(0, 0, 0);
+}
+.close1:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.modal2 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal2.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PANEL TRƯỢT */
+.modal2-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(180deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: flex-end;
+
+  /* BẮT ĐẦU NGOÀI MÀN HÌNH */
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
+}
+
+/* KHI MỞ → TRƯỢT VÀO */
+.modal2.active .modal2-content {
+  transform: translateX(0);
+}
+
+/* Ảnh nhân vật */
+.char-img2 {
+  width: 450px;
+  margin-right: -80px; /* tràn nhẹ cho đẹp=)) */
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+}
+.char-img2:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+/* Thông tin */
+.char-info2 {
+  padding: 40px 30px;
+  flex: 1;
+  text-align: left;
+}
+.close2{
+    text-decoration: none;
+    font-size: 40px;
+    float: right;
+    color: rgb(0, 0, 0);
+}
+.close2:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.modal3 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal3.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PANEL TRƯỢT */
+.modal3-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(180deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: flex-end;
+
+  /* BẮT ĐẦU NGOÀI MÀN HÌNH */
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
+}
+
+/* KHI MỞ → TRƯỢT VÀO */
+.modal3.active .modal3-content {
+  transform: translateX(0);
+}
+
+/* Ảnh nhân vật */
+.char-img3 {
+  width: 450px;
+  margin-right: -80px; /* tràn nhẹ cho đẹp */
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+}
+.char-img3:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+/* Thông tin */
+.char-info3 {
+  padding: 40px 30px;
+  flex: 1;
+  text-align: left;
+}
+.close3{
+    text-decoration: none;
+    font-size: 40px;
+    float: right;
+    color: rgb(0, 0, 0);
+}
+.close3:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.modal4 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal4.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* PANEL TRƯỢT */
+.modal4-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  background: linear-gradient(180deg,#DAB1DA ,  #CBC3E3,#aeeaf1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: flex-end;
+
+  /* BẮT ĐẦU NGOÀI MÀN HÌNH */
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
+}
+
+/* KHI MỞ → TRƯỢT VÀO */
+.modal4.active .modal4-content {
+  transform: translateX(0);
+}
+
+/* Ảnh nhân vật */
+.char-img4 {
+  width: 450px;
+  margin-right: -80px; /* tràn nhẹ cho đẹp */
+  margin-bottom: 30px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+}
+.char-img4:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    
+}
+/* Thông tin */
+.char-info4 {
+  padding: 40px 30px;
+  flex: 1;
+  text-align: left;
+}
+.close4{
+    text-decoration: none;
+    font-size: 40px;
+    float: right;
+    color: rgb(0, 0, 0);
+}
+.close4:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+
