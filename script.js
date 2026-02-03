@@ -82,3 +82,63 @@ document.addEventListener("DOMContentLoaded", () => {
   items.forEach(item => observer.observe(item));
 });
 
+
+
+
+/*làm màu chứ chưa học chỉ để làm đẹp web kk*/
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("searchInput");
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchBySection();
+    }
+  });
+
+  function clearHighlight() {
+    document.querySelectorAll(".highlight-heading").forEach(h => {
+      h.classList.remove("highlight-heading");
+    });
+  }
+
+  function getSectionText(heading) {
+    let text = heading.textContent.toLowerCase();
+    let el = heading.nextElementSibling;
+
+    while (el && !/^H[1-3]$/.test(el.tagName)) {
+      text += " " + el.textContent.toLowerCase();
+      el = el.nextElementSibling;
+    }
+
+    return text;
+  }
+
+  function searchBySection() {
+    const keyword = input.value.trim().toLowerCase();
+    if (!keyword) return;
+
+    clearHighlight();
+
+    const headings = document.querySelectorAll("h1, h2, h3");
+    let firstMatch = null;
+
+    headings.forEach(h => {
+      const sectionText = getSectionText(h);
+      if (sectionText.includes(keyword)) {
+        h.classList.add("highlight-heading");
+        if (!firstMatch) firstMatch = h;
+      }
+    });
+
+    if (firstMatch) {
+      firstMatch.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    } else {
+      console.log("❌ Không tìm thấy section phù hợp");
+    }
+  }
+});
+

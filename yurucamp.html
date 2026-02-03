@@ -20,6 +20,8 @@
             white-space: nowrap;
             animation: marquee 40s linear infinite;
         }
+
+
         
      </style>
      <script src="script.js"></script>
@@ -28,11 +30,18 @@
 <body>
    <div class="taskbar">
     <img class="logo" src="Yuru_Camp_logo.svg.png" alt="Logo">
-    <input class="search-bar" type="search" placeholder="Tìm kiếm...">
+    <input class="search-bar" type="text" id="searchInput" placeholder="Nhập từ khóa cần tìm...">
 
     <ul class="menu">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="index.html">Trang chủ</a>
+        <li class="has-dropdown">
+          <a href="#">Về chúng tôi</a>
+          <ul class="dropdown">
+                <li><a href="https://www.facebook.com/share/1C83K5xfTz/">Designer&Content</a></li>
+                <li><a href="https://www.facebook.com/nguyen.h.khiem.18">Developer</a></li>
+                <li><a href="https://www.facebook.com/angphuchuy.623069">Powerpoint</a></li>
+          </ul>
+        </li>
 
         <!-- thả từ trên xuống=))-->
         <li class="has-dropdown">
@@ -48,8 +57,8 @@
             <a href="">Liên hệ</a>
             <ul class="dropdown">
                 <li><a href="https://www.facebook.com/Yurucamp.monoVNFanpage/">YurucampFandomVN</a></li>
-                <li><a href="#">Dịch vụ 2</a></li>
-                <li><a href="#">Dịch vụ 3</a></li>
+                <li><a href="https://nxbkimdong.com.vn/?utm_campaign=1779538&utm_content=jWSNM6POjnbBQW6GpnmooIvw9Hov51azn2FIRi1765969556&ref=accesstrade&utm_source=accesstrade&aff_sid=jWSNM6POjnbBQW6GpnmooIvw9Hov51azn2FIRi1765969556&gad_source=1&gad_campaignid=23368163439&gclid=CjwKCAiA1obMBhAbEiwAsUBbIjJDpoGd-f5KpDnDNQFwv_6M_PYxqwCcphcnjY6CFeJpBp1N3XBaFxoCdQ0QAvD_BwE">Kim Đồng</a></li>
+                <li><a href=" https://share.google/M6lXOq3IZM8S7yBbZ">Kirara</a></li>
             </ul>
         
         
@@ -161,7 +170,7 @@
       <h2>Nadeshiko Kagamihara</h2>
       <p>
         Nhân vật phụ trong Yuru Camp.<br>
-        Cô nàng hoạt bát năng động, là máy bào đồ ăn đắc lực của câu lạc bộ, cô đã đạp xe từ nhà tới tạn hồ Motosu, bị lạc và đã gặp Rin
+        Cô nàng hoạt bát năng động, là máy bào đồ ăn đắc lực của câu lạc bộ.<br>Cô đã đạp xe từ nhà tới tạn hồ Motosu, bị lạc và đã gặp Rin
       </p>
     </div>
 
@@ -193,7 +202,6 @@
       <h2>Chiaki Oogaki</h2>
       <p>
         Chiaki Oogaki-Cô nàng năng động, luôn mang theo những món ăn ngon để chia sẻ với bạn bè.<br>
-        Cô là thành viên của câu lạc bộ ngoài trời, có khả năng nấu ăn tuyệt vời và luôn sẵn sàng giúp đỡ mọi người.<br>
         Chiaki Oogaki-là hội trưởng câu lạc bộ ngoài trời (gồm ba thành viên), cô là kẻ đầu têu cho hầu hết chuyến cắm trại trong suốt bộ phim và truyện, nổi bật với hai bím tóc đuôi ngựa
         
       </p>
@@ -242,19 +250,6 @@
 
     <div class="announcement__marquee">
       <p class="announcement__text">
-        <time datetime="2025-10-10"></time>
-        「Yuru Camp là một bộ anime theo dạng đời thường, xoay quanh các cô nàng ở trường THPT Motosu và những sự việc hài hước, dễ thương, hồi hộp,... Trong suốt quá trình chọn, đi, tham quan, dựng trại, cùng với sự góp mặt của những món ăn ngon mắt khiến người xem phải đói bụng
-        <span class="separator">Giới thiệu</span>
-
-        <time datetime="2025-11-01">2018</time>
-        Xuất phát là một đầu truyện, lần đầu được phát hành thông qua nhà xuất bản Manga Time Kirara, Yuru Camp đã trở thành một trong những bộ anime thư giản phải coi trong những năm gần đây
-
-        <span class="separator"></span>
-
-        <time datetime="2025-12-15">2026.2.2</time>
-        Truyện tranh Yuru Camp còn được phát hành phiên bản Việt hoá do nhà xuất bản Kim Đồng với tựa đề "Dã Ngoại Thảnh Thơi". Hiện tại, truyện đã tới tập 12, muộn hơn bên Nhật Bản 5 tập！
-        <span class="separator">Hot</span>
-
         <time datetime="2025-12-15">Season 4</time>
         Season 4 của anime YuruCamp (Laid-Back Camp) đã chính thức được xác nhận sản xuất vào tháng 11 năm 2024, tiếp nối thành công của mùa 3. Mặc dù chưa có ngày công chiếu cụ thể, nhiều nguồn tin dự đoán bộ phim có thể ra mắt trong năm 2026 hoặc muộn hơn. Thông tin chi tiết hơn sẽ được cập nhật thêm trên website chính thức.
         <span class="separator">Dự kiến công chiếu tại Việt Nam</span> 
@@ -398,6 +393,18 @@ Sau khi ra mắt vào năm 2015, Yuru Camp đã trở thành một cú hit lớn
       <img src="https://cdn.animenewsnetwork.com/thumbnails/max750x750/cms/news.4/166833/teaser_yurucamp_season2-2.jpg.jpeg" alt="Địa điểm">
 
     </div>
+  </div>
+</section>
+<!--section 9-->
+<section>
+  <div class="fade-up">
+    <div class="section9">
+
+      <div class="text-box9">
+        <h1>Kết</h1>
+        <p>
+Qua bài viết trên, có thể thấy rằng Yuru Camp là một bộ anime thư giản, phù hợp với những người thích sự nhẹ nhàng, thích hoà mình vào thiên nhiên và đặc biệt là thích đi đây đi đó, cắm trại giữa thiên nhiên bạt ngàn. Nếu có thời gian, bạn có thể xem bộ anime này bản Vietsub trên youtube Ani-One Asia, hoặc đọc bộ truyện này qua tựa đề "Dã Ngoại Thảnh Thơi" do nhà xuất bản Kim Đồng viết. Thay mặt nhóm, chúng mình chân thành cảm ơn bạn đã ghé thăm dự án nho nhỏ này của chúng mình! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡
+    
   </div>
 </section>
 

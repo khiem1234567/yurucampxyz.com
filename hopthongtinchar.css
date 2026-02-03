@@ -52,6 +52,10 @@
   padding: 40px 30px;
   flex: 1;
   text-align: left;
+  font-size: 24px;
+}
+.char-info h2:hover{
+  color: #f0d90ad5;
 }
 .close{
     text-decoration: none;
@@ -118,6 +122,10 @@
   padding: 40px 30px;
   flex: 1;
   text-align: left;
+  font-size: 24px;
+}
+.char-info1 h2:hover{
+  color: #f47aff;
 }
 .close1{
     text-decoration: none;
@@ -185,7 +193,13 @@
   padding: 40px 30px;
   flex: 1;
   text-align: left;
+  font-size: 25px;
 }
+.char-info2 h2:hover{
+  color: #5b9cff;
+
+}
+
 .close2{
     text-decoration: none;
     font-size: 40px;
@@ -252,6 +266,11 @@
   padding: 40px 30px;
   flex: 1;
   text-align: left;
+  font-size: 20px;
+}
+.char-info3 h2:hover{
+  color: #9d4aeb;
+
 }
 .close3{
     text-decoration: none;
@@ -319,7 +338,11 @@
   padding: 40px 30px;
   flex: 1;
   text-align: left;
+  font-size: 22px;
 }
+.char-info4 h2:hover{
+  color: #cc7f40;}
+
 .close4{
     text-decoration: none;
     font-size: 40px;

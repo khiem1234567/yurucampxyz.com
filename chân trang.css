@@ -95,7 +95,7 @@
   box-shadow:2px 6px 10px hwb(221 50% 0%) ;
 }
 .text-box {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -130,7 +130,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box2 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -167,7 +167,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box3 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -204,7 +204,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box4 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -241,7 +241,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box5 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -279,7 +279,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box6 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -309,17 +309,17 @@
   border-radius: 20px;
   height: 700px;
   margin-bottom: 30px;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .section7 img:hover{
    transition:0,3s;
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box7 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
-  width:900px;
+  width:950px;
   margin:30px;
   margin-left: 100px;
 }
@@ -354,7 +354,7 @@
   box-shadow:2px 6px 10px rgb(148, 238, 250) ;
 }
 .text-box8 {
-  background: linear-gradient(#fff09dec, #F5F5DD);
+  background-color: #fff2df;
   border-radius: 20px;
   padding: 55px;
   width:950px;
@@ -374,4 +374,31 @@
 .text-box8 p {
   font-size: 30px;
 }
+.section9 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
 
+.text-box9 {
+  background-color: #fff2df;
+;
+  border-radius: 20px;
+  padding: 55px;
+  width:1200px;
+  margin:30px;
+  margin-left: 260px;
+}
+.text-box9:hover{
+  transition:0,3s;
+  box-shadow:2px 6px 10px rgb(148, 238, 250) ;
+}
+.text-box9 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center; /* hoặc center nếu bạn thích */
+}
+
+.text-box9 p {
+  font-size: 30px;
+}
