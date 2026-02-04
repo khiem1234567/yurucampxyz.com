@@ -141,4 +141,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+/* nút câu hỏi*/
+function toggleQuestion() {
+    const body = document.querySelector('.question-body');
+    body.style.display = body.style.display === 'block' ? 'none' : 'block';
+}
 
